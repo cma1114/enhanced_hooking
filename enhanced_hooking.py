@@ -126,6 +126,9 @@ def create_add_activations_pre_hook(layers_activations):
 
     
 def create_continuous_zeroout_activations_hook(continuouspos_layer_activations):
+    """
+    Create a hook to zero-out projections of vectors within specified layers with each new token generated.
+    """
     def hook(module, inputs, outputs):
         current_layer_idx = getattr(module, 'layer_idx', None)
         if current_layer_idx in continuouspos_layer_activations:

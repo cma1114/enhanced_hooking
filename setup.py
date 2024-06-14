@@ -9,6 +9,6 @@ setup(
     author='Christopher Ackerman',
     url='https://github.com/cma1114/enhanced_hooking',
     install_requires=[
-        'torch>=2.3.0'
+        'torch>=2.2.0'
     ],
 )
