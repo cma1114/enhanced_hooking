@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='enhanced_hooking',
     version='0.1',
-    packages=['enhanced_hooking'],
+    py_modules=['enhanced_hooking'],
     description='Custom transformer hooks',
     long_description=open('README.md').read(),
     author='Christopher Ackerman',
